@@ -1,67 +1,98 @@
-.m-footer {
-  flex-shrink: 0;
-  background-color: var(--footer-background-color);
+// From
+// @media screen and (min-width: 1024px) { }
+
+// until
+// @media screen and (max-width: 1024px - 1px) { }
+
+footer {
+  background-color: #212121;
+  padding: 3rem 3rem;
 }
 
-.m-footer__content {
-  color: $white;
-  text-align: center;
-  padding: 30px $mobile-space;
+.container {
+  max-width: 1140px;
+  margin: auto;
+}
 
-  @include respond-to('medium') {
-    padding: 70px 0;
-    max-width: 330px;
-    margin: 0 auto;
+.link-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  padding-left: 30px;
+  @media screen and (max-width: 1216px - 1px) {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-left: 0px;
   }
-}
 
-.m-footer-copyright {
-  font-size: 0.875rem;
-  letter-spacing: 0.3px;
-  line-height: 1.75rem;
-  margin-bottom: $mobile-space;
+  .link-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-between;
+    text-align: center;
+    justify-content: center;
 
-  span {
-    display: block;
+    li {
+      padding-right: 1.2rem;
+      padding-right: 1.2rem;
+      margin-top: 6px;
 
-    @include respond-to('medium') {
-      display: inline;
-    }
-
-    &:nth-child(2) {
-      display: none;
-
-      @include respond-to('medium') {
-        display: inline;
+      a {
+        font-size: 14px !important;
+        color: #d9d9d9 !important;
+        white-space: nowrap;
       }
     }
   }
 
-  &.jslicense {
-    margin-bottom: 0;
+.social-link-wrapper {
+  width: fit-content;
+  @media screen and (min-width: 1216px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 3%;
+  }
+
+  .soc-media-circle {
+    padding: 0px;
+  }
+
+  .soc-media {
+    padding: 5px !important;
+  }
+
+  .soc-media:hover {
+    filter: invert(100%);
   }
 }
+}
 
-.m-footer-social {
+#separator {
+  background-color: black;
+  height: 1px;
+  margin-bottom: 0px;
+  border: none !important;
+}
+
+.copyright-wrapper {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
-
-  a {
-    display: inline-block;
-    color: $white;
-    margin: 0 15px;
-
-    span {
-      color: inherit;
-      font-size: 1rem;
-    }
+  padding-top: 10px;
+  padding-left: 30px;
+  @media screen and (max-width: 1216px - 1px) {
+    justify-content: center;
+    padding-left: 0px;
   }
-}
 
-.rtl {
-  .m-footer-social {
-    direction: ltr;
+  .wedio-logo-small {
+    width: 70px;
+    margin-bottom: 5px;
+  }
+
+  .copyright-date {
+    color: white;
+    font-size: 12px;
   }
 }
