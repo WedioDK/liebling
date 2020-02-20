@@ -1,3 +1,7 @@
+# Wedio
+How to set up SMTP with ghost
+https://docs.bitnami.com/aws/apps/ghost/configuration/configure-smtp/
+
 # Liebling
 
 Liebling is a beautiful and clean Ghost theme that is easy and comfortable to use. **It's free** and you can use it for any kind of content you might have. Now with dark mode 🌓!
