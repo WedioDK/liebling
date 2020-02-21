@@ -20,6 +20,8 @@
   --table-background-color-odd: #fafafa;
   --table-head-border-bottom: #e2e2e2;
   --invert-site-logo: invert(0);
+  --btn-secondary-color: white;
+  --btn-secondary-bg-color: #212121;
 }
 
 [data-theme="dark"] {
@@ -43,6 +45,8 @@
   --table-background-color-odd: #050505;
   --table-head-border-bottom: #1d1d1d;
   --invert-site-logo: invert(1);
+  --btn-secondary-color: #212121;
+  --btn-secondary-bg-color: white;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -67,5 +71,7 @@
     --table-background-color-odd: #050505;
     --table-head-border-bottom: #1d1d1d;
     --invert-site-logo: invert(1);
+    --btn-secondary-color: #212121;
+    --btn-secondary-bg-color: white;
   }
 }

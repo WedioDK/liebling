@@ -1,47 +1,64 @@
 .m-button {
+  outline: none;
+  font-weight: 700;
+  font-size: 14px;
+  border-radius: 100px;
+  min-height: 48px;
+  min-width: 180px;
+  line-height: 48px;
+  padding: 0% 20px;
   display: inline-block;
-  color: $titles;
   text-align: center;
-  letter-spacing: 0.2px;
-  line-height: 1;
-  font-size: 1rem;
-  font-weight: 600;
-  border-radius: 5px;
-  padding: 13px 25px;
+  text-decoration: none !important;
+  letter-spacing: 1px;
+  text-transform: uppercase;
   cursor: pointer;
-  outline: 0;
-  border: 0;
-  background-color: transparent;
-  @extend .no-appearance;
-  @include transition(all .25s cubic-bezier(.02,.01,.47,1));
+  transition-duration: 0.3s;
 
-  &.outlined {
-    color: var(--titles-color);
-    border: 1px solid var(--primary-foreground-color);
+  // Primary
+  background-color: #00b2a9;
+  color: white !important;
+  border: none !important;
+  &:hover {
+    transition-duration: 0.3s;
+    background-color: #28cfc7;
   }
 
-  &.filled,
-  &.primary {
-    @include bs(0 2px 4px var(--button-shadow-color-normal));
-
-    &:hover {
-      @include transform(translateY(-2px));
-      @include bs(0 4px 8px var(--button-shadow-color-hover));
-    }
+  // Others
+  &.secondary {
+    background-color: var(--btn-secondary-bg-color);
+    color:var(--btn-secondary-color)  !important; 
+  }
+  
+  &.secondary:hover {
+    background-color: #28cfc7;
+  }
+  
+  &.secondary.ghost {
+    background-color: transparent;
+    color: var(--btn-secondary-bg-color)  !important;
+    box-shadow: 0 0 0 2px var(--btn-secondary-bg-color) inset;
+    -webkit-box-shadow: 0 0 0 2px var(--btn-secondary-bg-color) inset;
+  }
+  
+  &.secondary.ghost:hover {
+    color:var(--btn-secondary-color) !important;
+    background-color: var(--btn-secondary-bg-color);
   }
 
-  &.filled {
-    border-radius: 5px;
-    background-color: $white;
+  &.slim {
+    min-height: 40px;
+    line-height: 40px;
   }
 
-  &.block {
-    display: block;
-    width: 100%;
-  }
+  &.header-button {
+    position: absolute;
+    top: -34px;
+    left: 10px;
 
-  &.primary {
-    color: $white;
-    background-color: var(--primary-subtle-color);
+    @include respond-to('medium') {
+      position: initial;
+    margin-right: 20px;
+  }
   }
 }
