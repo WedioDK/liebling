@@ -1,3 +1,9 @@
+# Wedio
+How to set up SMTP with ghost
+https://docs.bitnami.com/aws/apps/ghost/configuration/configure-smtp/
+
+Infinite Redirects after setting up SSL https://community.bitnami.com/t/how-to-get-https-working-80-redirect-loop-issues-resolved-ghost-gcp/55867
+
 # Liebling
 
 Liebling is a beautiful and clean Ghost theme that is easy and comfortable to use. **It's free** and you can use it for any kind of content you might have. Now with dark mode 🌓!
