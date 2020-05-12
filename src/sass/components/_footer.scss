@@ -6,7 +6,7 @@
 
 footer {
   background-color: #212121;
-  padding: 3rem 3rem;
+  padding: 20px 40px 40px
 }
 
 .container {
@@ -14,47 +14,39 @@ footer {
   margin: auto;
 }
 
-.link-wrapper {
+.link-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
   display: flex;
-  justify-content: space-between;
-  flex-direction: row;
-  padding-left: 30px;
-  @media screen and (max-width: 1216px - 1px) {
-    flex-direction: column-reverse;
-    align-items: center;
-    padding-left: 0px;
-  }
+  flex-flow: row wrap;
+  align-content: space-between;
+  text-align: center;
+  justify-content: center;
 
-  .link-list {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-flow: row wrap;
-    align-content: space-between;
-    text-align: center;
-    justify-content: center;
+  li {
+    padding: 20px 15px 0px 15px;
 
-    li {
-      padding-right: 1.2rem;
-      padding-right: 1.2rem;
-      margin-top: 6px;
-
-      a {
-        font-size: 14px !important;
-        color: #d9d9d9 !important;
-        white-space: nowrap;
-      }
+    a {
+      font-size: 14px !important;
+      color: #d9d9d9 !important;
+      white-space: nowrap;
     }
   }
+}
+
+#separator {
+  background-color: black;
+  border: none !important;
+  height: 1px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
 
 .social-link-wrapper {
   width: fit-content;
-  @media screen and (min-width: 1216px) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 3%;
-  }
+  margin-left: auto;
+  margin-right: auto;
 
   .soc-media-circle {
     padding: 0px;
@@ -68,27 +60,17 @@ footer {
     filter: invert(100%);
   }
 }
-}
-
-#separator {
-  background-color: black;
-  height: 1px;
-  margin-bottom: 0px;
-  border: none !important;
-}
 
 .copyright-wrapper {
   display: flex;
-  padding-top: 10px;
-  padding-left: 30px;
-  @media screen and (max-width: 1216px - 1px) {
-    justify-content: center;
-    padding-left: 0px;
-  }
+  padding-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center; 
+  text-align: center;
 
   .wedio-logo-small {
     width: 70px;
-    margin-bottom: 5px;
   }
 
   .copyright-date {
